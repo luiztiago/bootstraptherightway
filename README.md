@@ -36,6 +36,10 @@ Compiled and minified CSS, JavaScript, and fonts. No docs or original source fil
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 ```
 
+You can customize and your minified version download too. [http://getbootstrap.com/customize/](http://getbootstrap.com/customize/)
+
+** If you use this customization, never lost your config.json file **
+
 ### Bower
 Install and manage Bootstrap's Sass, CSS, JavaScript, and fonts using Bower.
 
@@ -54,6 +58,43 @@ gem 'bootstrap-sass', '~> 3.3.1'
 ## Customization
 
 When you are using a framework such as Bootstrap, a CSS preprocessor is going to be involved. They enhance the vanilla CSS and add functionality such as use of variables, mixins and nesting of rules.
+
+**Never do any update on the bootstrap files. This will kill you when you need to make any updates, and will be much more difficult to find out what changes were made.**
+
+### Variables
+
+You can create a variables file and do any customization here, such as colors, sizes, border-radius and a more things. You can get a list of LESS/SASS variables on bootstrap oficial site, or [click here](http://getbootstrap.com/customize/#less-variables). 
+
+#### Examples
+
+```css
+
+/* Colors */
+$body-bg: #fff
+$text-color: $gray-dark
+
+/* Fonts */
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif
+$font-size-base: 14px
+
+/* Components */
+$border-radius-small: 5px
+
+/* Buttons */
+$btn-primary-color: #fff
+
+/* Inputs */
+$input-border: #ccc
+$input-border-focus: #66afe9
+
+/* Media queries breakpoints */
+$screen-xs: 480px
+$screen-lg: 1200px
+
+/* Grid system */
+$grid-columns: 12 /* Number of columns in the grid. */
+$grid-gutter-width: 30px /*Padding between columns. Gets divided in half for the left and right.*/
+```
 
 ## Grid
 
