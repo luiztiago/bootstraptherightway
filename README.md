@@ -103,16 +103,15 @@ You can modify the variables to your own custom values, or just use the mixins w
 With this technique, the HTML code is much cleaner than using classes as `.row`, `.col-md-3`, `.col-sm-6`. And is easier to maintain the code to make any visual update, just by changing the css file.
 
 ```css
-.wrapper {
-  .make-row();
-}
-.content-main {
-  .make-lg-column(8);
-}
-.content-secondary {
-  .make-lg-column(3);
-  .make-lg-column-offset(1);
-}
+.wrapper
+  +make-row()
+
+.content-main
+  +make-lg-column(8)
+
+.content-secondary
+  +make-lg-column(3)
+  +make-lg-column-offset(1)
 ```
 
 ```html
