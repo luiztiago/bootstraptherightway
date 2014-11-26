@@ -33,3 +33,18 @@ Compiled and minified CSS, JavaScript, and fonts. No docs or original source fil
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+### Bower
+Install and manage Bootstrap's Sass, CSS, JavaScript, and fonts using Bower.
+
+ 	bower install bootstrap
+ 	
+### Rails Gem
+
+Add gem on Gemfile file. You can choose use SASS or LESS port of bootstrap. The most common applications on Rails, is to use the port in SASS
+
+	gem 'bootstrap-sass', '~> 3.3.1'
+
+## Customization
+
+When you are using a framework such as Bootstrap, a CSS preprocessor is going to be involved. They enhance the vanilla CSS and add functionality such as use of variables, mixins and nesting of rules.
