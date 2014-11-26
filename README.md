@@ -67,7 +67,7 @@ You can create a variables file and do any customization here, such as colors, s
 
 #### Examples
 
-```css
+```sass
 
 /* Colors */
 $body-bg: #fff
@@ -127,4 +127,3 @@ With this technique, the HTML code is much cleaner than using classes as `.row`,
 * [http://htmlcsstherightway.org/](http://htmlcsstherightway.org/)
 * [http://www.gotealeaf.com/blog/integrating-rails-and-bootstrap-part-1](http://www.gotealeaf.com/blog/integrating-rails-and-bootstrap-part-1)
 * [https://realpython.com/blog/python/getting-started-with-bootstrap-3/](https://realpython.com/blog/python/getting-started-with-bootstrap-3/)
-* [http://untame.net/2012/08/twitter-bootstrap-how-to-load-sites-faster-with-bootstrapcdn/](http://untame.net/2012/08/twitter-bootstrap-how-to-load-sites-faster-with-bootstrapcdn/)
