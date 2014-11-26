@@ -1,7 +1,7 @@
 # Bootstrap: The Right Way
 
-	Inspired on others "The Right Way's" projects. A compilation of good pratices to use Bootstrap.
-	
+Inspired on others "The Right Way's" projects. A compilation of good pratices to use Bootstrap.
+
 We do not deliver a cake recipe for you. We will show positive and negative points to be analyzed and used according to the needs of your project.
 
 ## Getting started
@@ -10,15 +10,15 @@ Bootstrap has a few easy ways to quickly get started, each one appealing to a di
 
 ### Download or CDN
 
-Compiled and minified CSS, JavaScript, and fonts. No docs or original source files are included. 
+Compiled and minified CSS, JavaScript, and fonts. No docs or original source files are included.
 
 | +1                                                              | -1                                        |
 |-----------------------------------------------------------------|-------------------------------------------|
 | Increases the parallelism available.                            | Imports all the bootstrap code            |
 | Increases the chance that there will be a cache-hit.            | Does not allow customization of variables |
 | Ensures that the payload will be as small as possible.          | Does not allow use of mixins              |
-| Reduces the amount of bandwidth used by your server.            | 
-| Ensures that the user will get a geographically close response. | 
+| Reduces the amount of bandwidth used by your server.            |
+| Ensures that the user will get a geographically close response. |
 
 
 * Download: [https://github.com/twbs/bootstrap/releases/download/v3.3.1/bootstrap-3.3.1-dist.zip](https://github.com/twbs/bootstrap/releases/download/v3.3.1/bootstrap-3.3.1-dist.zip)
@@ -46,7 +46,7 @@ Install and manage Bootstrap's Sass, CSS, JavaScript, and fonts using Bower.
 ```
 $ bower install bootstrap
 ```
- 	
+
 ### Rails Gem
 
 Add gem on Gemfile file. You can choose use SASS or LESS port of bootstrap. The most common applications on Rails, is to use the port in SASS
@@ -63,11 +63,11 @@ When you are using a framework such as Bootstrap, a CSS preprocessor is going to
 
 ### Variables
 
-You can create a variables file and do any customization here, such as colors, sizes, border-radius and a more things. You can get a list of LESS/SASS variables on bootstrap oficial site, or [click here](http://getbootstrap.com/customize/#less-variables). 
+You can create a variables file and do any customization here, such as colors, sizes, border-radius and a more things. You can get a list of LESS/SASS variables on bootstrap oficial site, or [click here](http://getbootstrap.com/customize/#less-variables).
 
 #### Examples
 
-```sass
+```css
 
 /* Colors */
 $body-bg: #fff
@@ -120,6 +120,39 @@ With this technique, the HTML code is much cleaner than using classes as `.row`,
   <div class="content-main">...</div>
   <div class="content-secondary">...</div>
 </div>
+```
+
+## Form
+
+Individual form controls automatically receive some global styling. All textual <input>, <textarea>, and <select> elements with .form-control are set to width: 100%; by default. Wrap labels and controls in .form-group for optimum spacing.
+
+```html
+<form role="form">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+```
+
+But to add horizontal or inline style, the Bootstrap documentation recommends you to add a lot of `.row` and `.col-md` classes for each field, for each form on your application. You can use the same technique of grid system and add this on your CSS. If in someday you will need update your form design, you can easily update it in a few CSS lines, and your markup will continue clean.
+
+```css
+.form-horizontal
+  .form-group
+    +make-row()
+
+  label
+    +make-md-column(3)
+
+  .form-control
+    +make-md-column(8)
+    +make-lg-column-offset(1)
 ```
 
 ## Source:
