@@ -121,6 +121,49 @@ With this technique, the HTML code is much cleaner than using classes as `.row`,
 </div>
 ```
 
+### When using .row and .col-* classes
+
+Use rows to create horizontal groups of columns. If you're using 12 columns (bootstrap default), you never can have more than 12 columns. If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.
+
+#### Example
+
+```html
+<div class="row">
+  <div class="col-md-6">.col-md-6</div>
+  <div class="col-md-6">.col-md-6</div>
+</div>
+<div class="row">
+  <div class="col-md-6">.col-md-6</div>
+  <div class="col-md-6">.col-md-6</div>
+</div>
+```
+
+|.col-md-6|.col-md-6|
+|---------|---------|
+|.col-md-6|.col-md-6|
+
+If you see code of grid file on bootstrap, `.row` class adds a negative margins left and right with half of variable `$grid-gutter-width`, and clearfix to break line after columns. Such as this:
+
+```css
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+  /* clearfix code */
+}
+```
+
+And for each `.col-*-*` classes, adds a positive padding left and right with half of variable `$grid-gutter-width`. `.row` class will fix the start position of first `.col-*-*` class and finish position of last `.col-*-*`, making the correct alignment.
+
+```css
+.col-*-* {
+  padding-left: 15px;
+  padding-right: 15px;
+  /* ... */
+}
+```
+
+**With this, never use `.row` class and one `col-md-12` inside of them. You're just messing your code.**
+
 ## Form
 
 Individual form controls automatically receive some global styling. All textual <input>, <textarea>, and <select> elements with .form-control are set to width: 100%; by default. Wrap labels and controls in .form-group for optimum spacing.
