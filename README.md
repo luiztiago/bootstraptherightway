@@ -100,6 +100,7 @@ $grid-gutter-width: 30px /*Padding between columns. Gets divided in half for the
 
 Here's an example of files structure to organize modules and overrides, which will be better explained below.
 
+```
 /stylesheets
 ├── application.css.sass
 ├── variables.css.sass
@@ -113,6 +114,7 @@ Here's an example of files structure to organize modules and overrides, which wi
     ├── form.css.sass
     ├── dropdown.css.sass
     └── ...
+```
 
 #### Modules
 
