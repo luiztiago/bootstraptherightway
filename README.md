@@ -103,16 +103,16 @@ Here's an example of files structure to organize modules and overrides, which wi
 ```
 /stylesheets
 ├── application.css.sass
-├── variables.css.sass
+├── _variables.css.sass
 ├── /modules
-│   ├── carousel.css.sass
-│   ├── dialog.css.sass
-│   ├── loading.css.sass
+│   ├── _carousel.css.sass
+│   ├── _dialog.css.sass
+│   ├── _loading.css.sass
 │   └── ...
 └── /overrides
-    ├── alert.css.sass
-    ├── form.css.sass
-    ├── dropdown.css.sass
+    ├── _alert.css.sass
+    ├── _form.css.sass
+    ├── _dropdown.css.sass
     └── ...
 ```
 
@@ -198,6 +198,9 @@ The most common, import some modules, and the grid is **one of the most imported
 Here's an example of using the default settings to create a two-column layout with a gap between. You can modify the variables to your own custom values, or just use the mixins with their default values.
 
 ```css
+@import "variables.less"
+@import "mixins.less"
+
 .wrapper
   +make-row()
 
