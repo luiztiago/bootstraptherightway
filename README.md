@@ -12,15 +12,6 @@ Bootstrap has a few easy ways to quickly get started, each one appealing to a di
 
 Compiled and minified CSS, JavaScript, and fonts. No docs or original source files are included.
 
-| +1                                                              | -1                                        |
-|-----------------------------------------------------------------|-------------------------------------------|
-| Increases the parallelism available.                            | Imports all the bootstrap code            |
-| Increases the chance that there will be a cache-hit.            | Does not allow customization of variables |
-| Ensures that the payload will be as small as possible.          | Does not allow use of mixins              |
-| Reduces the amount of bandwidth used by your server.            |
-| Ensures that the user will get a geographically close response. |
-
-
 * Download: [https://github.com/twbs/bootstrap/releases/download/v3.3.1/bootstrap-3.3.1-dist.zip](https://github.com/twbs/bootstrap/releases/download/v3.3.1/bootstrap-3.3.1-dist.zip)
 
 * Or, use these CDN links
@@ -35,6 +26,14 @@ Compiled and minified CSS, JavaScript, and fonts. No docs or original source fil
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 ```
+
+| +1                                                              | -1                                        |
+|-----------------------------------------------------------------|-------------------------------------------|
+| Increases the parallelism available.                            | Imports all the bootstrap code            |
+| Increases the chance that there will be a cache-hit.            | Bad customization of variables            |
+| Ensures that the payload will be as small as possible.          | Does not allow use of mixins              |
+| Reduces the amount of bandwidth used by your server.            |
+| Ensures that the user will get a geographically close response. |
 
 You can customize and your minified version download too. [http://getbootstrap.com/customize/](http://getbootstrap.com/customize/)
 
