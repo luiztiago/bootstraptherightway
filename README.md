@@ -174,9 +174,11 @@ If this title will be your title default, you can create a module for titles, an
 
 ## Grid
 
-You can modify the variables to your own custom values, or just use the mixins with their default values. Here's an example of using the default settings to create a two-column layout with a gap between.
+Grid module of Bootstrap is one of the most modules used by the community. In some cases the developers import all bootstrap to use only the grid. I will not even talk about this case. Does not deserve to be commented! lol
 
-With this technique, the HTML code is much cleaner than using classes as `.row`, `.col-md-3`, `.col-sm-6`. And is easier to maintain the code to make any visual update, just by changing the css file.
+The most common, import some modules, and the grid is **one of the most imported**. The problem is: how many grids you will use in your application? If you look at the code, 48 classes are generated only for `.col-*-*`. There are 12 columns, each with four screen sizes (xs, sm, md, lg) and often, the developer uses only 2 or 3 of them.
+
+Here's an example of using the default settings to create a two-column layout with a gap between. You can modify the variables to your own custom values, or just use the mixins with their default values.
 
 ```css
 .wrapper
@@ -196,6 +198,8 @@ With this technique, the HTML code is much cleaner than using classes as `.row`,
   <div class="content-secondary">...</div>
 </div>
 ```
+
+With this technique, the HTML code is much cleaner than using classes as `.row`, `.col-md-3`, `.col-sm-6`. And is easier to maintain the code to make any visual update, just by changing the css file.
 
 ### When using .row and .col-* classes
 
