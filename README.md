@@ -275,7 +275,7 @@ But to add horizontal or inline style, the Bootstrap documentation recommends yo
 
 ## Typography
 
-If you're using same typography on several pages, try to customize this using variables. If not, creates a module for this, as `.title` and you can extend some helper classes used on Bootstrap, or create some stuff according to your preference. A example with this is a little above, at `Classless` section.
+If you're using same typography on several pages, try to customize this using variables. If not, creates a module for this, as `.title` and you can extend some helper classes used on Bootstrap, or create some stuff according to your preference. A example with this is a little above, at <a href="#classless">`Classless`</a> section.
 
 ## Bootstrap 4.0
 
