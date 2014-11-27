@@ -98,11 +98,19 @@ $grid-gutter-width: 30px /*Padding between columns. Gets divided in half for the
 
 ### Files Structure
 
+TBD
+
 ### Overriding
+
+TBD
 
 ### New modules
 
+TBD
+
 ### "Classless"
+
+TBD
 
 ## Grid
 
@@ -206,6 +214,8 @@ But to add horizontal or inline style, the Bootstrap documentation recommends yo
 ```
 
 ## Typography
+
+TBD
 
 ## Bootstrap 4.0
 
