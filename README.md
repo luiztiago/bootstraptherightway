@@ -150,7 +150,7 @@ If you need to customize something that can not be changed through the variables
 
 Is good use of helper classes as the bootstrap itself already sets in your code, as `text-center`,` text-muted` and more things. But be careful not to mess up your code with repeated classes in various files and pages. Think if it is not better to create modules for this.
 
-#### Bad example
+#### The wrong way
 
 ```html
 <h2 class="text-center text-muted text-uppercase text-whatever">About company</h2>
