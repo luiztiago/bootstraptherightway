@@ -148,7 +148,29 @@ If you need to customize something that can not be changed through the variables
 
 ### "Classless"
 
-TBD
+Is good use of helper classes as the bootstrap itself already sets in your code, as `text-center`,` text-muted` and more things. But be careful not to mess up your code with repeated classes in various files and pages. Think if it is not better to create modules for this.
+
+#### Bad example
+
+```html
+<h2 class="text-center text-muted text-uppercase text-whatever">About company</h2>
+```
+
+#### The right way
+
+If this title will be your title default, you can create a module for titles, and extend all this classes on css, like this:
+
+```html
+<h2 class="title">About company</h2>
+```
+
+```css
+.title
+  @extend .text-center
+  @extend .text-muted
+  @extend .text-uppercase
+  @extend .text-whatever
+```
 
 ## Grid
 
@@ -253,7 +275,7 @@ But to add horizontal or inline style, the Bootstrap documentation recommends yo
 
 ## Typography
 
-TBD
+If you're using same typography on several pages, try to customize this using variables. If not, creates a module for this, as `.title` and you can extend some helper classes used on Bootstrap, or create some stuff according to your preference. A example with this is a little above, at `Classless` section.
 
 ## Bootstrap 4.0
 
