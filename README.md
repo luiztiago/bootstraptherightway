@@ -1,6 +1,6 @@
 # Bootstrap: The Right Way
 
-Inspired on others "The Right Way's" projects. A compilation of good pratices to use Bootstrap.
+Inspired on others "The Right Way's" projects. A compilation of good practices to use Bootstrap.
 
 We do not deliver a cake recipe for you. We will show positive and negative points to be analyzed and used according to the needs of your project.
 
