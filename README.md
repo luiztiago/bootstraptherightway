@@ -98,15 +98,51 @@ $grid-gutter-width: 30px /*Padding between columns. Gets divided in half for the
 
 ### Files Structure
 
-TBD
+Here's an example of files structure to organize modules and overrides, which will be better explained below.
 
-### Overriding
+/stylesheets
+├── application.css.sass
+├── variables.css.sass
+├── /modules
+│   ├── carousel.css.sass
+│   ├── dialog.css.sass
+│   ├── loading.css.sass
+│   └── ...
+└── /overrides
+    ├── alert.css.sass
+    ├── form.css.sass
+    ├── dropdown.css.sass
+    └── ...
 
-TBD
+#### Modules
 
-### New modules
+A Module is a more discrete component of the page. It is your navigation bars and your carousels and your dialogs and your widgets and so on. This is the meat of the page. Modules sit inside Layout components. Modules can sometimes sit within other Modules, too. Each Module should be designed to exist as a standalone component. In doing so, the page will be more flexible. If done right, Modules can easily be moved to different parts of the layout without breaking.
 
-TBD
+When defining the rule set for a module, avoid using IDs and element selectors, sticking only to class names. Here's an example of using modules structure.
+
+```css
+.widget
+  @extend .box
+
+.widget-title
+  @extend .text-thin
+
+.widget-footer
+  min-height: 30px
+```
+
+#### Overrides
+
+If you need to customize something that can not be changed through the variables, one solution is to do some overrides the modules already created by the Bootstrap. Here's an example of using overrides structure.
+
+```css
+.table
+  border-top: 4px solid $primary-color
+
+  th
+    text-transform: uppercase
+    @extend .text-thin
+```
 
 ### "Classless"
 
@@ -239,3 +275,4 @@ Bootstrap's team announced on the blog some new features for Bootstrap 4. Here�
 * [http://htmlcsstherightway.org/](http://htmlcsstherightway.org/)
 * [http://www.gotealeaf.com/blog/integrating-rails-and-bootstrap-part-1](http://www.gotealeaf.com/blog/integrating-rails-and-bootstrap-part-1)
 * [https://realpython.com/blog/python/getting-started-with-bootstrap-3/](https://realpython.com/blog/python/getting-started-with-bootstrap-3/)
+* [http://smacss.com/book/](http://smacss.com/book/)
