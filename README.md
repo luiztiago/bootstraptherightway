@@ -207,7 +207,22 @@ But to add horizontal or inline style, the Bootstrap documentation recommends yo
 
 ## Typography
 
+## Bootstrap 4.0
 
+Bootstrap's team announced on the blog some new features for Bootstrap 4. Here’s a quick preview of what’s to come:
+
+* Updated grid system with at least one additional tier for handheld devices.
+* A brand new component to replace panels, thumbnails, and wells.
+* A completely new, simpler navbar.
+* Switch all pixel values over to rems and ems for easier and better type and component sizing.
+* Dropped support for IE8.
+* Tons of form updates, including custom form controls.
+* New component animations and transitions for several components.
+* UMD support throughout our JavaScript plugins.
+* Improved JavaScript positioning for tooltips, popovers, and dropdowns.
+* Brand new documentation (written in Markdown, too!).
+* A new approach to configuring global theming options.
+* And hundreds more changes across the board.
 
 ## Source:
 * [http://getbootstrap.com/](http://getbootstrap.com/)
