@@ -47,7 +47,7 @@ Install and manage Bootstrap's Sass, CSS, JavaScript, and fonts using Bower.
 $ bower install bootstrap
 ```
 
-### Rails Gem
+### Ruby Gem
 
 Add gem on Gemfile file. You can choose use SASS or LESS port of bootstrap. The most common applications on Rails, is to use the port in SASS
 
