@@ -14,6 +14,10 @@ Compiled and minified CSS, JavaScript, and fonts. No docs or original source fil
 
 * Download: [https://github.com/twbs/bootstrap/releases/download/v3.3.1/bootstrap-3.3.1-dist.zip](https://github.com/twbs/bootstrap/releases/download/v3.3.1/bootstrap-3.3.1-dist.zip)
 
+You can customize and your minified version download too. [http://getbootstrap.com/customize/](http://getbootstrap.com/customize/)
+
+**If you use this customization, never lost your config.json file**
+
 * Or, use these CDN links
 
 ```html
@@ -30,14 +34,10 @@ Compiled and minified CSS, JavaScript, and fonts. No docs or original source fil
 | +1                                                              | -1                                        |
 |-----------------------------------------------------------------|-------------------------------------------|
 | Increases the parallelism available.                            | Imports all the bootstrap code            |
-| Increases the chance that there will be a cache-hit.            | Bad customization of variables            |
+| Increases the chance that there will be a cache-hit.            | Does not allow customization of variables |
 | Ensures that the payload will be as small as possible.          | Does not allow use of mixins              |
 | Reduces the amount of bandwidth used by your server.            |
 | Ensures that the user will get a geographically close response. |
-
-You can customize and your minified version download too. [http://getbootstrap.com/customize/](http://getbootstrap.com/customize/)
-
-** If you use this customization, never lost your config.json file **
 
 ### Bower
 Install and manage Bootstrap's Sass, CSS, JavaScript, and fonts using Bower.
