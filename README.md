@@ -14,9 +14,9 @@ Compiled and minified CSS, JavaScript, and fonts. No docs or original source fil
 
 * Download: [https://github.com/twbs/bootstrap/releases/download/v3.3.1/bootstrap-3.3.1-dist.zip](https://github.com/twbs/bootstrap/releases/download/v3.3.1/bootstrap-3.3.1-dist.zip)
 
-You can customize and your minified version download too. [http://getbootstrap.com/customize/](http://getbootstrap.com/customize/)
+You can customize and your download your minified version too. [http://getbootstrap.com/customize/](http://getbootstrap.com/customize/)
 
-**If you use this customization, never lost your config.json file**
+**If you use this customization, never lose your config.json file**
 
 * Or, use these CDN links
 
