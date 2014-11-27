@@ -96,6 +96,14 @@ $grid-columns: 12 /* Number of columns in the grid. */
 $grid-gutter-width: 30px /*Padding between columns. Gets divided in half for the left and right.*/
 ```
 
+### Files Structure
+
+### Overriding
+
+### New modules
+
+### "Classless"
+
 ## Grid
 
 You can modify the variables to your own custom values, or just use the mixins with their default values. Here's an example of using the default settings to create a two-column layout with a gap between.
@@ -196,6 +204,10 @@ But to add horizontal or inline style, the Bootstrap documentation recommends yo
     +make-md-column(8)
     +make-lg-column-offset(1)
 ```
+
+## Typography
+
+
 
 ## Source:
 * [http://getbootstrap.com/](http://getbootstrap.com/)
